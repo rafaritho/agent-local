@@ -84,13 +84,13 @@ $(function(){
                 var modelo3 = '<div class="card text-center">' + 
                         '<h5 class="card-header">' + 'Duos' + '</h5>' + 
                         '<div class="card-body">' + 
-                        '<p class="card-text">' + listaSolo + '</p>' + 
+                        '<p class="card-text">' + listaDuo + '</p>' + 
                 '</div>' + 
                 '</div>';
                 var modelo4 = '<div class="card text-center">' + 
                         '<h5 class="card-header">' + 'Squad' + '</h5>' + 
                         '<div class="card-body">' + 
-                        '<p class="card-text">' + listaSolo + '</p>' + 
+                        '<p class="card-text">' + listaSquad + '</p>' + 
                 '</div>' + 
                 '</div>';
 
