@@ -84,7 +84,7 @@ $(function(){
                 var modelo3 = '<div class="card text-center">' + 
                         '<h5 class="card-header">' + 'Duos' + '</h5>' + 
                         '<div class="card-body">' + 
-                        '<p class="card-text">' + listaDuo + '</p>' + 
+                        '<p class="card-text">' + listaDuos + '</p>' + 
                 '</div>' + 
                 '</div>';
                 var modelo4 = '<div class="card text-center">' + 
