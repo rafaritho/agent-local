@@ -10,5 +10,12 @@ comando: C:\Users\seunome> cd agent
 
 resultado: C:\Users\seunome\agent
 
-3.Após acessar a pasta do repositório insira o comando: node index.js Esse comando iniciará a homepage do site "index.js" e o site estará rodando na porta 3000, setada no código
-4.Acesse http://localhost:3000/
+3.instale o npm através do comando: npm install 
+
+Após acessar a pasta do repositório e com o npm instalado 
+
+4.Insira o comando: node index.js 
+
+Esse comando iniciará a homepage do site "index.js" e o site estará rodando na porta 3000, setada no código
+
+5.Acesse http://localhost:3000/
