@@ -4,18 +4,18 @@ Fortnite Agent for local use
 Requisitos: Node.js instalado
 
 1.Abra o cmd do Node.js
-2.Acesse a pasta do repositório através do comando: cd
+2.Acesse a pasta do repositÃ³rio atravÃ©s do comando: cd
 
 comando: C:\Users\seunome> cd agent
 
 resultado: C:\Users\seunome\agent
 
-3.instale o npm através do comando: npm install 
+3.instale o npm atravÃ©s do comando: npm install 
 
-Após acessar a pasta do repositório e com o npm instalado 
+ApÃ³s acessar a pasta do repositÃ³rio e com o npm instalado 
 
 4.Insira o comando: node index.js 
 
-Esse comando iniciará a homepage do site "index.js" e o site estará rodando na porta 3000, setada no código
+Esse comando iniciarÃ¡ a homepage do site "index.js" e o site estarÃ¡ rodando na porta 5000, setada no cÃ³digo
 
-5.Acesse http://localhost:3000/
+5.Acesse http://localhost:5000/
