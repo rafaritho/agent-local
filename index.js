@@ -4,6 +4,13 @@ var app = express();
 var path = require('path');
 var request = require ('request');
 var bodyParser = require ('body-parser');
+
+express()
+  .use('/public', express.static(path.join(__dirname, 'static')))
+  .set('static', path.join(__dirname, 'static'))
+  .get('/', (req, res) => res.render('/static/index.html'))
+  //.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
 //iniciamento do bodyparse (comandos do express para usar o path)
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
@@ -34,6 +41,6 @@ app.post('/', function(req,res){
     });
 }); 
 
-var port = process.env.PORT || 3000; //port de um servidor externo
+var port = process.env.PORT || 5000; //port de um servidor externo
 app.listen(port);
 //app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

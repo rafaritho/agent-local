@@ -2,7 +2,10 @@ $(function(){
     var btPesquisar = $('#pesquisar');     //submitBtn
     var opPlataforma = $('#plataforma'); //platfromDropDownBtn
     var campoNickname = $('#nickname');    //epicNickName 
-    var resultados = $('#resultados');      //results
+    var resultadoNome = $('#resultadoNome');      //results
+    var resultadoSolo = $('#resultadoSolo');
+    var resultadoDuo = $('#resultadoDuo');
+    var resultadoSquad = $('#resultadoSquad');
 
     //valores padrões
     var opcaoPlat = 'pc';
@@ -32,7 +35,7 @@ $(function(){
     });
 
     function resetarResultados(){
-        resultados.html('');
+        resultadoNome.html('');
         campoNickname.val('');
     }
 
@@ -63,21 +66,38 @@ $(function(){
                   '<li class = "list-group-item">' + 'K/D: '                     + dados.stats.p9.kd.value     + "</li>" +
                   '<li class = "list-group-item">' + 'Total de Kills: '          + dados.stats.p9.kills.value    + "</li>" +
                   '<li class = "list-group-item">' + 'Kills por jogo: '          + dados.stats.p9.kpg.value      + "</li>" +
-                 '</ul>'; 
+                 '</ul>';  
+                
+                var modelo = '<div class="card text-center">' +   
+                        '<div class="card-body-center">'       +                                                               
+                        '<h5 class="card-header">'            + epicUserHandle + '</h5>' + 
+                        //'<p class="card-text">' + listaDuos + '</p>' +                         
+                        '</div>' + 
+                    '</div>';   
 
-        var modelo = '<div class="card text-center">' + 
-                        '<h5 class="card-header">' + epicUserHandle + '</h5>' + 
+                var modelo2 = '<div class="card text-center">' + 
+                        '<h5 class="card-header">' + 'Solos' + '</h5>' + 
                         '<div class="card-body">' + 
-                        '<h5 class="card-title">' + 'Solos' + '</h5>' + 
                         '<p class="card-text">' + listaSolo + '</p>' + 
-                        '<h5 class="card-title">' + 'Duos' + '</h5>' + 
-                        '<p class="card-text">' + listaDuos + '</p>' + 
-                        '<h5 class="card-title">' + 'Squad' + '</h5>' + 
-                        '<p class="card-text">' + listaSquad + '</p>' + 
-                     '</div>' + 
-                    '</div>';            
+                '</div>' + 
+                '</div>';
+                var modelo3 = '<div class="card text-center">' + 
+                        '<h5 class="card-header">' + 'Duos' + '</h5>' + 
+                        '<div class="card-body">' + 
+                        '<p class="card-text">' + listaSolo + '</p>' + 
+                '</div>' + 
+                '</div>';
+                var modelo4 = '<div class="card text-center">' + 
+                        '<h5 class="card-header">' + 'Squad' + '</h5>' + 
+                        '<div class="card-body">' + 
+                        '<p class="card-text">' + listaSolo + '</p>' + 
+                '</div>' + 
+                '</div>';
 
-        resultados.html(modelo);
+        resultadoNome.html(modelo);
+        resultadoSolo.html(modelo2);
+        resultadoDuo.html(modelo3);
+        resultadoSquad.html(modelo4);
     }
 
 });
