@@ -37,22 +37,46 @@ $(function(){
     }
 
     function mostrarDados(dados){
-        var epicUserHandle = dados.epicUserHandle;
+        var epicUserHandle = dados.epicUserHandle
         var listaSolo = '<ul class = "list-group">' +
                     '<li class = "list-group-item">' + 'Vitórias: '                + dados.stats.p2.top1.value     + "</li>" +
                     '<li class = "list-group-item">' + 'Porcentagem de Vitórias: ' + dados.stats.p2.winRatio.value + "</li>" +
                     '<li class = "list-group-item">' + 'Rank: '                    + dados.stats.p2.top1.rank      + "</li>" +
-                    '<li class = "list-group-item">' + 'KD:'                       + dados.stats.p2.kd.value       + "</li>" +
+                    '<li class = "list-group-item">' + 'K/D: '                     + dados.stats.p2.kd.value     + "</li>" +
                     '<li class = "list-group-item">' + 'Total de Kills: '          + dados.stats.p2.kills.value    + "</li>" +
                     '<li class = "list-group-item">' + 'Kills por jogo: '          + dados.stats.p2.kpg.value      + "</li>" +
                    '</ul>';
+
+        var listaDuos = '<ul class = "list-group">' +
+                   '<li class = "list-group-item">' + 'Vitórias: '                + dados.stats.p10.top1.value     + "</li>" +
+                   '<li class = "list-group-item">' + 'Porcentagem de Vitórias: ' + dados.stats.p10.winRatio.value + "</li>" +
+                   '<li class = "list-group-item">' + 'Rank: '                    + dados.stats.p10.top1.rank      + "</li>" +
+                   '<li class = "list-group-item">' + 'K/D: '                     + dados.stats.p10.kd.value     + "</li>" +
+                   '<li class = "list-group-item">' + 'Total de Kills: '          + dados.stats.p10.kills.value    + "</li>" +
+                   '<li class = "list-group-item">' + 'Kills por jogo: '          + dados.stats.p10.kpg.value      + "</li>" +
+                  '</ul>'; 
+
+        var listaSquad = '<ul class = "list-group">' +
+                  '<li class = "list-group-item">' + 'Vitórias: '                + dados.stats.p9.top1.value     + "</li>" +
+                  '<li class = "list-group-item">' + 'Porcentagem de Vitórias: ' + dados.stats.p9.winRatio.value + "</li>" +
+                  '<li class = "list-group-item">' + 'Rank: '                    + dados.stats.p9.top1.rank      + "</li>" +
+                  '<li class = "list-group-item">' + 'K/D: '                     + dados.stats.p9.kd.value     + "</li>" +
+                  '<li class = "list-group-item">' + 'Total de Kills: '          + dados.stats.p9.kills.value    + "</li>" +
+                  '<li class = "list-group-item">' + 'Kills por jogo: '          + dados.stats.p9.kpg.value      + "</li>" +
+                 '</ul>'; 
+
         var modelo = '<div class="card text-center">' + 
                         '<h5 class="card-header">' + epicUserHandle + '</h5>' + 
                         '<div class="card-body">' + 
                         '<h5 class="card-title">' + 'Solos' + '</h5>' + 
                         '<p class="card-text">' + listaSolo + '</p>' + 
+                        '<h5 class="card-title">' + 'Duos' + '</h5>' + 
+                        '<p class="card-text">' + listaDuos + '</p>' + 
+                        '<h5 class="card-title">' + 'Squad' + '</h5>' + 
+                        '<p class="card-text">' + listaSquad + '</p>' + 
                      '</div>' + 
-                    '</div>';
+                    '</div>';            
+
         resultados.html(modelo);
     }
 
