@@ -1,40 +1,203 @@
 <doctype html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
     <meta charset="utf-8">
 
     <title>Fortnite Agent</title>
     <meta name="descrição" content="">
-    <meta name="autor" content="rarqs e zeusrevolts">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <meta name="autor" content="rarqs e zeusrevolts"> 
+
+    <script src="https://kit.fontawesome.com/b80686332d.js"></script>
+    <link  rel="stylesheet" href="application.css">
+    <link rel="stylesheet" href="/scripts/css/bootstrap.min.css" type="text/css">     
+
 </head>   
 <body>
-    <div class="container" style="margin-top: 12em">
-        <div class="row">
-            <div class="col-lg-6"></div>
-            <div class="col-lg-6"></div>
-            <div class="input-group">
-                <input type="text" id="nickname" class="form-control" aria-label="Text input with segmented dropdown button">
-                <div class="input-group-append">
-                    <button type="button" id="pesquisar" class="btn btn-outline-secondary">Pesquisar</button>
-                    </button>                    
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light 
+    bg-light fixed-top">
+        <div class = "container">                
+            <a class="navbar-brand" href="#"><strong>Agent</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#stats">Stats</a>
+                    </li>  
+                <li class="nav-item">
+                    <a class="nav-link" href="#desafios">Desafios diários</a>
+                </li>  
+                <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Nós</a>
+                    </li>    
+                </ul>                
+            </div>
+    </div>
+    </nav>
+</header>
+<div class = "jumbotron jumbotron-fluid height100p banner" id="home">
+    <div class="container h100">
+              <div class = "contentBox h100">
+                  <div>
+                        <h1 class="nome-do-site"><strong>Fortnite Agent</strong></h1>
+                        <h2 class = "header"><strong>Seja bem vindo!</strong></h2>
+                        <p class = "header">Analise seus stats e ranking do Fortnite</p>   
+                        <div class = "row">             
+                        <div class = "offset-sm-2 col-sm-8">
+                        <a href="#stats" class="btn btnD1">Vamos Lá</a>                    
+                        </div>
+                    </div> 
+                    </div>
                 </div>
+          </div>
+    </div>
+    <section class = 'sec1' id="stats">
+        <div class = "container">
+            <div class = "row">
+                <div class="container">
+                    <div class = "headerText text-center">
+                        <h2>Stats check</h2>
+                        <p>Digite seu nickname abaixo</p>                       
+                                                   
+                            <div class="input-group">
+                                <input type="text" id="nickname" class="form-control" aria-label="Text input with segmented dropdown button">
+                                <div class="input-group-append">
+                                    <button type="button" id="pesquisar" class="btn btn-dark">Pesquisar</button>
+                                    </button>                  
+                                </div>
+                            </div>   
+                            <div class = "row">
+                                    <div class = "col-sm-4">
+                                        <div class = "placeBox">
+                                            <div class = "imgBx">
+                                                    <img src="https://gamewith-en.akamaized.net/img/e1d6fef5430fc7e654dda202ffe37a44.jpg" class= "img-fluid" alt="Imagem solos">
+                                            </div>
+                                            <div class = "content" id="resultadoSolo">                                                 
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-4">
+                                        <div class = "placeBox">
+                                            <div class = "imgBx">
+                                                    <img src="https://gamewith-en.akamaized.net/img/7f06c1607d01136525b738f34d78b96b.jpg" class= "img-fluid" alt="Imagem Duos">
+                                            </div>     
+                                            <div class = "content" id="resultadoDuo">                                                 
+                                            </div>                                         
+                                        </div>
+                                    </div>
+                                    <div class = "col-sm-4">
+                                        <div class = "placeBox">
+                                            <div class = "imgBx">
+                                                    <img src="https://gamewith-en.akamaized.net/img/b4dd4922fe55867df0f912450de3cafb.jpg" class= "img-fluid" alt="Imagem squad">
+                                            </div>   
+                                            <div class = "content" id="resultadoSquad">                                                 
+                                            </div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>                        
+                                                 
+                            <div class="estiloNome">               
+                                <div class="estiloNome" id="resultadoNome"></div>                            
+                            </div>                        
+                           
+                        </div> 
+                    </div>
+                </div>    
+        </div>
+
+    </section>
+    <section class = "sec2" id = "desafios" style="margin-top: 3em; margin-bottom: 10em">
+        <div class = "contentBox h100">
+            <div>
+                <h1>Desafios Diários</h1>
+                <p>bla bla bla</p>
+                <a href="#" class="btn btnD1">Saiba Mais</a>
             </div>
         </div>
-    </div>
-    <div class="col-lg-3"></div>
-            <div class="row">
-                <div class="col-lg-6"></div>
-                <div class="col-lg-12" id="resultadoNome"></div>
-                <div class="col-lg-4" id="resultadoSolo"></div>
-                <div class="col-lg-4" id="resultadoDuo"></div>
-                <div class="col-lg-4" id="resultadoSquad"></div>
-                <div class="col-lg-6"></div>
-            </div>          
+
+    </section>
+
+    <section class="sobrenos" id="sobre" style="margin-top: 3em; margin-bottom: 10em">
+        <div class = "container">
+            <div class = "row">
+                <div class = "offset-sm-2 col-sm-8">
+                    <div class = "headerText">
+                        <h2>Test</h2> 
+                        <p> testando estilos</p>
+                    </div>
+                    </div>
+            </div>
+
+            </div>
+
+
+    </section>
+
+    <section class = "contact" id = "contato">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-12">
+                    <div class="headerText">
+                        <h2>Contato</h2>
+                        <p>Caso tenha algum problema bla bkla</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "row clearfix">
+                <div class = "offset-sm-2 col-sm-8">
+                    <form>
+                        <div class = "form-group">
+                            <label>Name</label>
+                            <input type = "text" name = "" class = 
+                            "form-control">
+                        </div>
+                        <div class = "form-group">
+                                <label>Email</label>
+                                <input type = "text" name = "" class = 
+                                "form-control">
+                            </div>
+                        <div class = "form-group">
+                                    <label>Message</label>
+                                    <textarea class = "form-control textarea"> </textarea>
+                                </div> 
+                        <div class = "form-group">
+                        <button class = "btn btnD1">Send</button> 
+                        </div>        
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+<footer>
+        <p class="cpryt">Copyright 2019 Fortnite Agent |  
+                Feito por: <a href="#"> RarkS e ZeusRevoLTs </a>
+        </p>
+
+</footer>      
+            
+           
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script tupe = "text/javascript">
+    $(document).scroll(function(){
+        $('.navbar').toggleClass('scrolled', $(this).
+        scrollTop() > $('.navbar').height());
+    })
+    </script>
     <script src="public/fortniteagent.js"></script>
 </body>
 </html>
